@@ -7,6 +7,7 @@ const App = () => {
   const [time, setTime] = useState(date.toTimeString())
 
   useEffect(() => {
+    console.log(navigator.getBattery())
     if (navigator.getBattery) {
       setBattery(navigator.getBattery())
     }
