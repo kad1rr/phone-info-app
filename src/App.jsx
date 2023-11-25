@@ -20,13 +20,13 @@ const App = () => {
       <div className='bg-gray-800/20 rounded-lg w-full h-full p-2 flex flex-col items-center justify-center gap-y-8'>
         <h1 className='text-2xl'>Battery</h1>
         <div className='w-[150px] h-[75px] rounded-full border-[8px] border-white flex flex-col items-center justify-center'>
-          <p>{typeof battery === 'string' ? battery : battery * 100 + '%'}</p>
+          <p>{battery}</p>
         </div>
       </div>
       <div className='bg-gray-800/20 rounded-lg w-full h-full p-2 flex flex-col items-center justify-center gap-y-8'>
         <h1 className='text-2xl'>Time</h1>
         <p>{time}</p>
-        <p{JSON.stringify(navigator.getBattery)}</p>
+        <p{battery}</p>
         
       </div>
     </div>
