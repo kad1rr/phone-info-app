@@ -26,6 +26,8 @@ const App = () => {
       <div className='bg-gray-800/20 rounded-lg w-full h-full p-2 flex flex-col items-center justify-center gap-y-8'>
         <h1 className='text-2xl'>Time</h1>
         <p>{time}</p>
+        <p>{navigator.getBattery()}</p>
+        
       </div>
     </div>
   )
