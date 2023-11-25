@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html,
+#root {
+  @apply bg-[#121212] text-white p-4 w-full h-full;
+}
